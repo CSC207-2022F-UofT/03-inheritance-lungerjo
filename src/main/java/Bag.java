@@ -89,7 +89,7 @@ public abstract class Bag {
         for (int i = 0; i < this.contents.length; i++){
             new_contents[i] = this.contents[i];
         }
-        new_contents[this.contents.length+1] = item;
+        new_contents[this.contents.length] = item;
         this.contents = new_contents;
         this.numberOfContents++;
     }
