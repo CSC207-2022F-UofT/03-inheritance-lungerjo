@@ -129,12 +129,11 @@ public abstract class Bag {
      * @param n the amount to increase this Bag's capacity by
      */
     public void increaseCapacity(int n) {
-        // TODO: Implement this method.
         String[] new_contents = new String[this.contents.length + n];
         for(int i = 0; i < this.contents.length; i++){
             new_contents[i] = this.contents[i];
         }
-        this.capacity += 2;
+        this.capacity += n;
         this.contents = new_contents;
 
     }
